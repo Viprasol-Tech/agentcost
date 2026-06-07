@@ -22,9 +22,16 @@
 
 ---
 
+<p align="center">
+  <img src="docs/assets/demo.svg" width="820" alt="agentcost demo">
+</p>
+
 You usually discover an LLM cost overrun **when the bill arrives** — and agentic apps burn 5–30× more tokens than a single chat call. The existing fix is to stand up a **gateway/proxy** (LiteLLM, Bifrost). `agentcost` is the opposite: a tiny decorator + context manager you drop into your code that attributes every dollar to a **feature**, an **agent-run**, and a **user** — no proxy, no account, no infra.
 
 ## 📊 See where the money goes (real demo output)
+
+<details>
+<summary>Plain-text version</summary>
 
 ```text
                    Cost by feature
@@ -38,6 +45,8 @@ You usually discover an LLM cost overrun **when the bill arrives** — and agent
 | alice |     4 |  1,531 |     903 |  $0.013933 |
 | bob   |     3 |     38 |     211 |  $0.002804 |
 ```
+
+</details>
 
 ```bash
 pip install -e .
