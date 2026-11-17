@@ -33,16 +33,16 @@ classifiers = [
     "Typing :: Typed",
 ]
 dependencies = [
-    "pydantic>=2.6",
-    "typer>=0.12",
-    "rich>=13.7",
+    "pydantic>=2.13.4",
+    "typer>=0.26.7",
+    "rich>=15.0.0",
 ]
 
 [project.optional-dependencies]
 dev = [
-    "ruff>=0.5,<0.16",
-    "mypy>=1.10",
-    "pytest>=8.0",
+    "ruff>=0.15.16,<0.16",
+    "mypy>=2.1.0",
+    "pytest>=9.0.3",
 ]
 
 [project.urls]
